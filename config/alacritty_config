@@ -1,0 +1,41 @@
+[window]
+padding = { x = 6 }
+
+[font]
+normal = { family = "Fira Code Medium", style = "Regular" }
+size = 12.7
+
+# Mariana Theme for Alacritty
+[colors]
+
+[colors.primary]
+background = "#353c45"
+foreground = "#d8dee9"
+
+[colors.cursor]
+cursor = "#80a4c2"
+text = "#ffffff"
+
+[colors.selection]
+background = "#ffd866" # Transparency not supported; use solid background.
+text = "#ffffff"
+
+[colors.normal]
+black = "#000000"
+red = "#f92672"
+green = "#a6e22e"
+yellow = "#f4bf75"
+blue = "#66d9ef"
+magenta = "#ae81ff"
+cyan = "#38ccdc"
+white = "#f8f8f2"
+
+[colors.bright]
+black = "#555555"
+red = "#f92672"
+green = "#a6e22e"
+yellow = "#ffd866"
+blue = "#3d90e3"
+magenta = "#6679cc"
+cyan = "#9afbff"
+white = "#ffffff"

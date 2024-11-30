@@ -1,0 +1,30 @@
+[global_config]
+  window_state = maximise
+  scroll_tabbar = True
+  ask_before_closing = never
+[keybindings]
+  reset = <Primary>k
+[profiles]
+  [[default]]
+    background_color = "#353c45"
+    background_darkness = 0.95
+    cursor_fg_color = "#353c45"
+    cursor_bg_color = "#d8dee9"
+    font = Fira Code Medium 12.699
+    foreground_color = "#d8dee9"
+    palette = "#000000:#ff3333:#b8cc52:#e9c062:#3d90e3:#6679cc:#3bc5e7:#ffffff:#555555:#ff6565:#b8cc52:#ffd76e:#3d90e3:#6679cc:#9afbff:#ffffff"
+    use_system_font = False
+    bold_is_bright = True
+    title_transmit_fg_color = "#3d3846"
+    title_transmit_bg_color = "#ff9800"
+    title_use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
