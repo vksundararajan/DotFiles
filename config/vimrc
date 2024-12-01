@@ -1,0 +1,14 @@
+colorscheme slate
+syntax on
+filetype plugin indent on
+
+set background=dark
+set laststatus=2
+set number
+set cursorline
+set lazyredraw
+set mouse=a
+set hlsearch
+set incsearch
+set ignorecase
+set clipboard=unnamedplus
