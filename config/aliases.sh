@@ -8,7 +8,7 @@ alias terminatorconfig='subl ~/.config/terminator/config'
 alias gtkcss='subl ~/.config/gtk-3.0/gtk.css'
 
 # Commonly used aliases
-alias ls='eza'
+#alias ls='eza'
 alias update='sudo apt update && sudo apt upgrade'
 # alias cmd='compgen -c | sort -u | fzf --height=40% --reverse --border --prompt="Search Commands: "  | xclip -selection clipboard'
 alias cmd='compgen -c | sort -u | fzf --height=50% --reverse --prompt="➤ Search Commands → " | xclip -selection clipboard'
@@ -17,8 +17,8 @@ alias fd='read -r cmd <<< "$(history | fzf --height=50% --reverse --prompt="➤ 
 alias copy='xclip -selection clipboard'
 
 # Capture The Flag (CTF) related aliases
-alias tryhackme='sudo openvpn /home/dR3dMonkey/VPN/dR3dMonkey_thm.ovpn'
-alias hackthebox='sudo openvpn /home/dR3dMonkey/VPN/dR3dMonkey_htb.ovpn'
+alias tryhackme='sudo openvpn /home/dR3dMonkey/Vpn/dR3dMonkey_thm.ovpn'
+alias hackthebox='sudo openvpn /home/dR3dMonkey/Vpn/dR3dMonkey_htb.ovpn'
 alias listen='rlwrap nc -nvlp'
 alias up='python3 -m http.server'
 alias nmap_all='nmap -Pn -p- -sS -T4 --min-rate 10000 --max-retries 1 --max-scan-delay 5ms --disable-arp-ping'

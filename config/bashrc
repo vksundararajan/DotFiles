@@ -1,21 +1,7 @@
+# Export PATH
+# export PATH=$PATH:URL 
+
+# Update aliases
 if [ -f ~/.oh-my-bash/custom/aliases/my_aliases.sh ]; then
   source ~/.oh-my-bash/custom/aliases/my_aliases.sh
 fi
-
-function add_empty_line {
-  if [[ "$BASH_COMMAND" != "source ~/.bashrc" && -z "$CLEAR_SCREEN_FLAG" ]]; then
-    echo
-  fi
-}
-
-if [[ "$PROMPT_COMMAND" != *"add_empty_line"* ]]; then
-  PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND; }add_empty_line"
-fi
-
-function clear_and_space() {
-  CLEAR_SCREEN_FLAG=1
-  clear
-  printf '\n'
-  unset CLEAR_SCREEN_FLAG
-}
-bind -x '"\C-l":clear_and_space'

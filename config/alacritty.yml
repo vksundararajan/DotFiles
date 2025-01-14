@@ -1,0 +1,38 @@
+window:
+  padding:
+    x: 6
+    y: 0
+font:
+  size: 13
+  normal:
+    family: Monaco
+    style: Regular
+colors:
+  primary:
+    background: "#353c45"
+    foreground: "#d8dee9"
+  cursor:
+    cursor: "#d8dee9"
+    text: "#ffffff"
+  selection:
+    background: "#d8dee9"
+    text: "#353c45"
+  normal:
+    black: "#000000"
+    red: "#f92672"
+    green: "#a6e22e"
+    yellow: "#f4bf75"
+    blue: "#3d90e3"
+    magenta: "#ae81ff"
+    cyan: "#3d90e3"
+    white: "#f8f8f2"
+  bright:
+    black: "#555555"
+    red: "#f92672"
+    green: "#a6e22e"
+    yellow: "#ffd866"
+    blue: "#3d90e3"
+    magenta: "#6679cc"
+    cyan: "#9afbff"
+    white: "#ffffff"
+

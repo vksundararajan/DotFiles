@@ -1,4 +1,0 @@
-/* Increase the padding of VteTerminal to enhance visual comfort and layout spacing */
-VteTerminal, vte-terminal {
-  padding: 10px;
-}

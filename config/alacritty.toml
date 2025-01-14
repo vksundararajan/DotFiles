@@ -10,7 +10,7 @@ y = 6
 size = 12.7
 
 [font.normal]
-family = "Fira Code Retina"
+family = "Monaco"
 style = "Regular"
 
 # Primary colors for background and foreground
