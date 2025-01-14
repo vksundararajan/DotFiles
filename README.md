@@ -1,6 +1,6 @@
-# dR3dMonkey-Xtend
+# DotFiles
 
-Welcome to **dR3dMonkey-Xtend**, a repository I created for my personal use to simplify the setup of a **Cybersecurity Red Team Lab Environment**. It contains scripts to automate user creation and configure the environment, enabling immediate focus on red teaming activities.
+Welcome to **DotFiles**, a repository I created for my personal use to simplify the setup of a **Cybersecurity Red Team Lab Environment**. It contains scripts to automate user creation and configure the environment, enabling immediate focus on red teaming activities.
 
 If you find this repository useful, feel free to make use of it.
 
@@ -13,11 +13,11 @@ This repository is intended to:
 ## Usage
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/dR3dMonkey-Xtend.git
+   git clone https://github.com/your-username/DotFiles.git
    ```
 2. Navigate to the repository folder:
    ```
-   cd dR3dMonkey-Xtend
+   cd DotFiles
    ```
 3. Execute the desired script:
    - Follow the instructions provided as comments inside each script to ensure proper usage.
