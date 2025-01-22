@@ -1,0 +1,13 @@
+---
+- name: Setup Attackbox
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: 'File Location'
+      debug:
+        msg: '{{ ansible_env.HOME }}'
+  roles:
+    - role: 'roles/install-tools'
+    - role: 'roles/configure-browser'
+    - role: 'roles/install-monaco'
+    - role: 'roles/configure-terminal'

@@ -1,0 +1,36 @@
+# tasks file for install-monaco
+---
+- name: 'Download Monaco Font'
+  get_url:
+    url: '{{ font_url }}'
+    dest: '/tmp/monaco.ttf'
+  
+- name: 'Create Monaco Dir'
+  become: true
+  become_method: sudo
+  file:
+    path: '{{ font_directory }}'
+    state: directory
+
+- name: 'Move to Fonts'
+  become: true
+  become_method: sudo
+  command: mv '/tmp/monaco.ttf' '{{ font_directory }}/monaco.ttf'
+
+- name: 'Update Font Cache'
+  become: true
+  become_method: sudo
+  command: fc-cache -fv
+
+- name: 'Verify Monaco Installation'
+  command: fc-list | grep -i monaco
+  register: font_check
+
+- name: 'Print Verification Result'
+  debug:
+    var: font_check
+
+- name: 'Remove Temp Monaco'
+  file:
+    path: '/tmp/monaco.ttf'
+    state: absent

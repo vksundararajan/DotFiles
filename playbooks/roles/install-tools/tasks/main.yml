@@ -1,0 +1,10 @@
+# tasks file for install-tools
+---
+- name: 'Create vault Folder'
+  become: true
+  file:
+    path: /vault
+    state: directory
+    mode: '0755'
+    owner: "{{ ansible_env.USER }}"
+    group: "{{ ansible_env.USER }}"

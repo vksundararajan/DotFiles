@@ -1,0 +1,12 @@
+---
+- name: 'Install VIM'
+  become: true
+  become_method: sudo
+  apt:
+    name: vim
+    state: present
+
+- name: 'Configure VIM'
+  get_url:
+    url: '{{ vimrc }}'
+    dest: '{{ ansible_env.HOME }}/.vimrc'

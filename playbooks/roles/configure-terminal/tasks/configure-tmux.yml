@@ -1,0 +1,12 @@
+---
+- name: 'Install Tmux'
+  become: true
+  become_method: sudo
+  apt:
+    name: tmux
+    state: present
+
+- name: 'Configure Tmux'
+  get_url:
+    url: '{{ tmux_config  }}'
+    dest: '{{ ansible_env.HOME }}/.tmux.conf'

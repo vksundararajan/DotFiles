@@ -1,0 +1,7 @@
+# tasks file for configure-terminal
+---
+- include configure-tmux.yml
+- include configure-vim.yml
+- include configure-alacritty.yml
+- include configure-ohmybash.yml
+- include configure-bashrc.yml

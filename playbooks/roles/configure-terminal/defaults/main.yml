@@ -1,0 +1,7 @@
+# defaults file for configure-terminal
+---
+tmux_config: 'https://raw.githubusercontent.com/vickie-ks/DotFiles/refs/heads/main/config/tmux.conf'
+alacritty_config: 'https://raw.githubusercontent.com/vickie-ks/DotFiles/refs/heads/main/config/alacritty.toml'
+vimrc: 'https://raw.githubusercontent.com/vickie-ks/DotFiles/refs/heads/main/config/vimrc'
+ohmybash: 'https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh'
+bashrc: 'https://raw.githubusercontent.com/vickie-ks/DotFiles/refs/heads/main/config/bashrc'

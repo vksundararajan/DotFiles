@@ -1,0 +1,15 @@
+---
+- name: 'Setup Bashrc'
+  get_url:
+    url: '{{ bashrc }}'
+    dest: '/tmp/bashrc_script'
+    
+- name: 'Append to Bashrc'
+  blockinfile:
+    path: ~/.bashrc
+    block: "{{ lookup('file', '/tmp/bashrc_script') }}"
+
+- name: 'Remove Temp Bashrc'
+  file:
+    path: '/tmp/bashrc_script'
+    state: absent

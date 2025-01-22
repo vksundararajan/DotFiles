@@ -1,0 +1,11 @@
+---
+- name: 'Install Oh-My-Bash'
+  shell: bash -c "$(curl -fsSL {{ ohmybash }})"
+  args:
+    executable: /bin/bash
+  register: oh_my_bash_install
+  ignore_errors: true
+
+- name: 'Oh-My-Bash Installation Result'
+  debug:
+    var: oh_my_bash_install.stdout

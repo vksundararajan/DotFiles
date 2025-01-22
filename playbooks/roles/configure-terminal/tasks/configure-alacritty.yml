@@ -1,0 +1,12 @@
+---
+- name: 'Install Alacritty'
+  become: true
+  become_method: sudo
+  apt:
+    name: alacritty
+    state: present
+
+- name: 'Configure Alacritty'
+  get_url:
+    url: '{{ alacritty_config  }}'
+    dest: '{{ ansible_env.HOME }}/.config/alacritty/alacritty.toml'
