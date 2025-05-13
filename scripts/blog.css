@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+
+:root {
+    --width: 720px;
+    --font-head: 'Gentium Book Plus', sans-serif;
+    --font-main: 'Source Sans 3', sans-serif;
+    --font-secondary: 'Gentium Plus', serif;
+    --font-scale: 1.2em;
+    --background: #212121;
+    --accent: #6699CC;
+    --mark: #FFCC33;
+    --text: #DCDCDC;
+    --code-background: #212121;
+    --code: #FF9933;
+    --blockquote: #6699CC;
+    --nav-text: #ababab;
+    --nav-scale: 0.9em;
+}
+
+@media (max-width: 600px) {
+  ul.blog-posts li {
+    margin-bottom: 1rem; /* Increase spacing between posts */
+  }
+}
+
+body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--mark);
+    text-decoration-thickness: 0.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--mark);
+    text-decoration-thickness: 0.2rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--mark);
+}
+
+a, 
+a:visited {
+    color: var(--text);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--mark);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--code);
+}
+
+nav p {
+  font-size: var(--nav-scale);
+  color: var(--nav-text);
+}
+
+nav a {
+    font-family: var(--font-head);
+    margin-right: 0px;
+}
+
+strong {
+  font-weight: normal;
+  background-color: var(--accent);  /* Background color for highlight */
+  color: var(--background);   /* Text color */
+  padding: 0.1rem 0.3rem;           /* Padding to make the highlight appear more natural */
+  margin: 0 0.1rem;                 /* Margin to avoid too-tight spacing between words */
+  border-radius: 0.2rem;            /* Optional: rounded corners for a smoother look */
+}
+
+mark {
+  background-color: var(--mark);  /* Background color for highlight */
+  color: var(--background);   /* Text color */
+  padding: 0.1rem 0.3rem;           /* Padding to make the highlight appear more natural */
+  margin: 0 0.1rem;                 /* Margin to avoid too-tight spacing between words */
+  border-radius: 0.2rem;            /* Optional: rounded corners for a smoother look */
+}
+
+mark em {
+  color: var(--background);   /* Text color */
+}
+
+em {
+  color: white; 
+  font-style: italic;    /* Ensure the italic style remains, as it's the default for <em> */
+}
+
+em a,
+em a:visited {
+  text-decoration-color: white; /* Changes the color of the text decoration (e.g., underline) */
+}
+
+
+button {
+    margin: 0;
+    cursor: pointer;
+}
+
+time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 0.9rem;
+    padding: 0.15rem 0.3rem;
+    margin: 0.1rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: var(--background);   
+    background: var(--mark);   
+    border: 1px solid var(--mark);
+    white-space: nowrap; 
+}
+
+main {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background);
+    color: var(--code);
+    border-radius: 3px;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote);
+    padding-left: 20px;
+    font-style: italic;
+}
+
+header {
+  	display: flex;
+    justify-content: space-between;
+}
+
+footer, 
+footer a,
+footer a:visited {
+    padding: 25px 0;
+    color: var(--mark);
+    font-family: monospace;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.title,
+.title:hover,
+.title:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.title h1 {
+    font-family: var(--font-head);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.inline {
+    width: auto !important;
+}
+
+.highlight, .code {
+    padding: 1px 15px;
+    background-color: var(--code-background);
+    color: var(--code);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+}
+
+/* Email form container - full width & consistent box-sizing */
+.email-signup {
+    display: flex;                     /* Layout children side-by-side */
+    align-items: stretch;              /* Ensure input & button share the same height */
+    width: 100%;                       /* Span the full width of the container */
+    background-color: var(--background);
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-sizing: border-box;            /* Include padding/border in width calculations */
+  }
+  
+  /* Email input - override inline style, set unified padding and border */
+  .email-signup input[type="email"] {
+    flex: 1;  
+    padding: 0.5rem 1rem !important;   /* Override inline padding (5px) with our values */
+    font-size: 1rem;
+    color: var(--text);
+    background-color: var(--background) !important;
+    border: 1px solid var(--mark);
+    border-right: none;                /* Remove right border so it seamlessly joins the button */
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Submit button - remove left border to merge with input */
+  .email-signup input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--mark);
+    border: 1px solid var(--mark);
+    border-left: none;                 /* Remove left border for a unified look */
+    border-radius: 0 4px 4px 0;
+    color: transparent;                /* Hide default button text */
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  /* Button hover state - change colors */
+  .email-signup input[type="submit"]:hover {
+    background-color: var(--code);
+    border-color: var(--code);
+  }
+  
+  /* When the button is hovered, update the email input's border color */
+  .email-signup:has(input[type="submit"]:hover) input[type="email"] {
+    border-color: var(--code);
+  }
+  
+  /* Hide any <br> tags to maintain the flex layout */
+  .email-signup br {
+    display: none;
+  }
+  
+/* Blog post list styling */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+    align-items: flex-start;  /* Standard value for aligning items at the top */
+}
+
+/* Override any inherited h3 color for the tag container */
+h3 span.tag {
+    color: var(--text);
+    font-family: monospace;
+    margin-left: 0.9rem;                /* More padding before tag */
+  }
+  span.tag a,
+  span.tag a:hover,
+  span.tag a:visited {
+    display: inline-block;            /* Enable vertical alignment control */
+    vertical-align: middle;           /* Center the icon within the text line */
+    font-size: 0.75em;                /* Set size to roughly match lowercase letter height */
+    line-height: 1;                   /* Maintain a consistent line height */
+    color: var(--text) !important;    /* Force the accent color */
+    text-decoration: none !important; /* Remove underline in all states */
+  }  
+
+/* Styling for <time> inside .blog-posts */
+ul.blog-posts li time {
+    font-style: normal;
+    font-size: 1rem;        /* Adjust size to match link */
+    color: var(--text);     /* Use the text color */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6rem;    /* Adjust line height */
+}
+
+/* Spacing between <time> and the link */
+ul.blog-posts li span {
+    flex: 0 0 auto;
+    margin-right: 2rem;  /* Adjust spacing between time and link */
+}
+
+/* Link styling for visited links */
+ul.blog-posts li a:visited {
+    color: var(--text);
+}
+
+.tags {
+    white-space: nowrap; 
+    padding: 0.15rem 0.3rem;
+    margin: 0.1rem;
+    margin-bottom: 1rem; /* Adjust this value for desired spacing */
+    line-height: 1.9rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.tags a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 0.5rem; /* Adds space between links */
+}
+
+.tags a:last-child {
+    margin-right: 0; /* Removes the extra margin after the last link */
+}
+
+.tags a:hover,
+.tags a:visited {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+small,
+.upvote-button,
+.upvoted {
+    color: var(--mark);
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.upvote-button svg {
+    stroke: var(--mark); /* Directly changes the color of the SVG's stroke */
+}
+
+img {
+  background-color: white;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
