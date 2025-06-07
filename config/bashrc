@@ -1,7 +1,0 @@
-# Export PATH
-# export PATH=$PATH:URL 
-
-# Update aliases
-if [ -f ~/.oh-my-bash/custom/aliases/my_aliases.sh ]; then
-  source ~/.oh-my-bash/custom/aliases/my_aliases.sh
-fi
